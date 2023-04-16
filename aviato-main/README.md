@@ -1,4 +1,4 @@
-# website template By Themefisher
+# Website template By Themefisher
 
 Aviato is the ultimate e-commerce front-end solution based on Bootstrap 3. Along with styling all default components of popular framework it introduces lots of new flexible elements you can use across the website. In total 25+ components.
 
