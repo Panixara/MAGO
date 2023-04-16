@@ -42,8 +42,6 @@ Aviato is the ultimate e-commerce front-end solution based on Bootstrap 3. Along
 * **Blog Right Sidebar**
 * **Blog Single**
 * **Contact**
-* **404**
-* **Coming Soon**
 * **Login**
 * **Signup**
 * **Forget Password**
