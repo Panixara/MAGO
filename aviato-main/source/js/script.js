@@ -8,50 +8,6 @@
     });
   });
 
-  
-  // Instagram Feed
-  if (($('#instafeed').length) !== 0) {
-    var accessToken = $('#instafeed').attr('data-accessToken');
-    var userFeed = new Instafeed({
-      get: 'user',
-      resolution: 'low_resolution',
-      accessToken: accessToken,
-      template: '<a href="{{link}}"><img src="{{image}}" alt="instagram-image"></a>'
-    });
-    userFeed.run();
-  }
-
-  setTimeout(function () {
-    $('.instagram-slider').slick({
-      dots: false,
-      speed: 300,
-      // autoplay: true,
-      arrows: false,
-      slidesToShow: 6,
-      slidesToScroll: 1,
-      responsive: [{
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 4
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 3
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 2
-          }
-        }
-      ]
-    });
-  }, 1500);
-
-
   // e-commerce touchspin
   $('input[name=\'product-quantity\']').TouchSpin();
 
@@ -61,7 +17,6 @@
     event.preventDefault();
     $(this).ekkoLightbox();
   });
-
 
   // Count Down JS
   $('#simple-timer').syotimer({
@@ -86,5 +41,48 @@
   });
   $('.hero-slider').slickAnimation();
 
+  // test slickkkkkkk //
+  $('.multiple-items').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
+
 
 })(jQuery);
+
+var express = require('express')
+var ejs = require('ejs');
+var bodyParser = require('body-parser');
+var mysql = require('mysql');
+
+mysql.createConnection({
+  host : "localhost",
+  user : "root",
+  password : "",
+  database : "MAGO"
+})
+
+var app = express();
+
+app.use(express.static('public'));
+app.set('view engine','ejs');
+
+app.listen(8080);
+app.use(bodyParser.urlencoded({extended:true}));
+
+//localhost:8080
+app.get('/',function(req,res){
+  var con = mysql.createConnection({
+    host : "localhost",
+    user : "root",
+    password : "",
+    database : "MAGO" 
+
+  })
+
+con.query("SELECT * FROM Products",(err,result)=>{
+  res.render('page/index',{result:result});
+  })
+
+})
