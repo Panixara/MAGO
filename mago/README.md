@@ -1,6 +1,21 @@
-# MAGO Website
+# Aviato By Themefisher
 
 Aviato is the ultimate e-commerce front-end solution based on Bootstrap 3. Along with styling all default components of popular framework it introduces lots of new flexible elements you can use across the website. In total 25+ components.
+
+<!-- demo -->
+## Example Site
+
+| [![](screenshots/home.jpg)](https://demo.themefisher.com/aviato/) | [![](screenshots/about.jpg)](https://demo.themefisher.com/aviato/about.html) | [![](screenshots/pricing.jpg)](https://demo.themefisher.com/aviato/pricing.html) | [![](screenshots/contact.jpg)](https://demo.themefisher.com/aviato/contact.html) |
+|:---:|:---:|:---:|:---:|
+| **Home**  | **About**  | **Pricing** | **Contact** |
+| [![](screenshots/shop.jpg)](https://demo.themefisher.com/aviato/shop.html) | [![](screenshots/single-product.jpg)](https://demo.themefisher.com/aviato/product-single.html) | [![](screenshots/cart.jpg)](https://demo.themefisher.com/aviato/cart.html) | [![](screenshots/checkout.jpg)](https://demo.themefisher.com/aviato/checkout.html) |
+| **Shop**  | **Single Product**  | **Cart** | **Checkout** |
+| [![](screenshots/dashboard.jpg)](https://demo.themefisher.com/aviato/dashboard.html) | [![](screenshots/orders.jpg)](https://demo.themefisher.com/aviato/order.html) | [![](screenshots/payment.jpg)](https://demo.themefisher.com/aviato/address.html) | [![](screenshots/faq.jpg)](https://demo.themefisher.com/themefisher/aviato/faq.html) |
+| **Dashboard**  | **Orders**  | **Payment** | **FAQ** |
+| [![](screenshots/blogrs.jpg)](https://demo.themefisher.com/aviato/blog-right-sidebar.html) | [![](screenshots/blogls.jpg)](https://demo.themefisher.com/aviato/blog-left-sidebar.html) | [![](screenshots/blogg.jpg)](https://demo.themefisher.com/aviato/blog-grid.html) | [![](screenshots/blogd.jpg)](https://demo.themefisher.com/aviato/blog-full-width.html) |
+| **Blog Right Sidebar**  | **Blog Left Sidebar**  | **Blog Grid** | **Blog Full Width** |
+
+👉🏻[View Live Preview](https://demo.themefisher.com/aviato/)
 
 <!-- resources -->
 ## Pages
@@ -20,11 +35,21 @@ Aviato is the ultimate e-commerce front-end solution based on Bootstrap 3. Along
 * **Order Confirmation**
 * **Purchase Confirmation**
 * **Payment Confirmation**
+* **FAQ**
+* **Blog Grid**
+* **Blog Full Width**
+* **Blog Left Sidebar**
+* **Blog Right Sidebar**
+* **Blog Single**
 * **Contact**
+* **404**
 * **Coming Soon**
 * **Login**
 * **Signup**
 * **Forget Password**
+* **Alerts**
+* **Buttons**
+* **typography**
 
 <!-- download -->
 ## Download And installation
@@ -86,6 +111,20 @@ Now you get a `theme` folder that has all the changes you have made. you can use
 
 We use GitHub Issues as the official bug tracker for the Aviato Template. Please Search [existing issues](https://github.com/themefisher/aviato/issues). It’s possible someone has already reported the same problem.
 If your problem or idea has not been addressed yet, feel free to [open a new issue](https://github.com/themefisher/aviato/issues).
+
+<!-- support -->
+## Technical Support or Questions (Paid)
+
+If you have questions or need help integrating the product please [contact us](mailto:mehedi@themefisher.com) instead of opening an issue.
+
+<!-- licence -->
+## License
+
+Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
+
+**Code License:** Released under the [MIT](https://github.com/themefisher/aviato/blob/main/LICENSE) license.
+
+**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
 
 <!-- resources -->
 ## Resources
