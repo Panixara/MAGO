@@ -2,9 +2,6 @@
 
 Aviato is the ultimate e-commerce front-end solution based on Bootstrap 3. Along with styling all default components of popular framework it introduces lots of new flexible elements you can use across the website. In total 25+ components.
 
-<!-- demo -->
-👉🏻[View Live Preview](https://demo.themefisher.com/aviato/)
-
 <!-- resources -->
 ## Pages
 
