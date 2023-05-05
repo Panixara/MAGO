@@ -95,7 +95,41 @@
 							<input id="product-quantity" type="text" value="0" name="product-quantity">
 						</div>
 					</div>
-					<a href="cart.html" class="btn btn-main mt-20">Add To Cart</a>
+					
+
+				</p>
+				<p>⠀</p>
+
+						
+						<a href="cart.html" class="btn btn-main">Add To Cart</a>
+						<button id="deletefavourite{{$item->id}}" onClick="return" name="addfavourite" class="btn btn-lg"><i class="tf-ion-ios-heart"></i></button>
+	
+					
+					<script>
+					function addToFavourites(itemid, userid) {
+						var user_id = userid;
+						var item_id = itemid;
+					
+						$.ajax({
+							type: 'post',
+							url: 'api/addfavourite',
+							data: {
+								'user_id': user_id,
+								'item_id': item_id,
+							},
+							success: function () {
+								$('#addfavourites' + item_id).css({
+									'color': '#ad1707'
+								});
+							},
+							error: function (XMLHttpRequest) {
+								// handle error
+							}
+						});
+					}
+					</script>
+	
+				
 				</div>
 			</div>
 		</div>
@@ -104,7 +138,7 @@
 				<div class="tabCommon mt-20">
 					<ul class="nav nav-tabs">
 						<li class="active"><a data-toggle="tab" href="#details" aria-expanded="true">Details</a></li>
-						<li class=""><a data-toggle="tab" href="#reviews" aria-expanded="false">Reviews (3)</a></li>
+						<li class=""><a data-toggle="tab" href="#reviews" aria-expanded="false">Reviews</a></li>
 					</ul>
 					<div class="tab-content patternbg">
 						<div id="details" class="tab-pane fade active in">
@@ -118,81 +152,14 @@
 							<div class="post-comments">
 						    	<ul class="media-list comments-list m-bot-50 clearlist">
 								    <!-- Comment Item start-->
-								    <li class="media">
-
-								        <a class="pull-left" href="#!">
-								            <img class="media-object comment-avatar" src="images/blog/avatar.png" alt="" width="50" height="50" />
-								        </a>
-
-								        <div class="media-body">
-								            <div class="comment-info">
-								                <h4 class="comment-author">
-								                    <a href="#!">Jonathon Andrew</a>
-								                	
-								                </h4>
-								                <time datetime="2013-04-06T13:53">July 02, 2015, at 11:34</time>
-								                <a class="comment-button" href="#!"><i class="tf-ion-chatbubbles"></i>Reply</a>
-								            </div>
-
-								            <p>
-								                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at magna ut ante eleifend eleifend.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod laborum minima, reprehenderit laboriosam officiis praesentium? Impedit minus provident assumenda quae.
-								            </p>
-								        </div>
-
+									<li class="media">
+										<form>
+											<input type="text" name="" id="reviews" class="form-control" placeholder="Comment here...">
+										</form>
+									</p>
+										<a href="cart.html" class="btn-comment" >Submit</a>
 								    </li>
-								    <!-- End Comment Item -->
-
-								    <!-- Comment Item start-->
-								    <li class="media">
-
-								        <a class="pull-left" href="#!">
-								            <img class="media-object comment-avatar" src="images/blog/avatar.png" alt="" width="50" height="50" />
-								        </a>
-
-								        <div class="media-body">
-
-								            <div class="comment-info">
-								                <div class="comment-author">
-								                    <a href="#!">Jonathon Andrew</a>
-								                </div>
-								                <time datetime="2013-04-06T13:53">July 02, 2015, at 11:34</time>
-								                <a class="comment-button" href="#!"><i class="tf-ion-chatbubbles"></i>Reply</a>
-								            </div>
-
-								            <p>
-								                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at magna ut ante eleifend eleifend. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni natus, nostrum iste non delectus atque ab a accusantium optio, dolor!
-								            </p>
-
-								        </div>
-
-								    </li>
-								    <!-- End Comment Item -->
-
-								    <!-- Comment Item start-->
-								    <li class="media">
-
-								        <a class="pull-left" href="#!">
-								            <img class="media-object comment-avatar" src="images/blog/avatar.png" alt="" width="50" height="50">
-								        </a>
-
-								        <div class="media-body">
-
-								            <div class="comment-info">
-								                <div class="comment-author">
-								                    <a href="#!">Jonathon Andrew</a>
-								                </div>
-								                <time datetime="2013-04-06T13:53">July 02, 2015, at 11:34</time>
-								                <a class="comment-button" href="#!"><i class="tf-ion-chatbubbles"></i>Reply</a>
-								            </div>
-
-								            <p>
-								                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at magna ut ante eleifend eleifend.
-								            </p>
-
-								        </div>
-
-								    </li>
-							</ul>
+								</ul>
 							</div>
 						</div>
 					</div>
