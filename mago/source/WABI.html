@@ -110,7 +110,40 @@
 							<li><a href="product-single.html">Soap</a></li>
 						</ul>
 					</div>
-					<a href="cart.html" class="btn btn-main mt-20">Add To Cart</a>
+					
+
+				</p>
+				<p>⠀</p>
+
+						
+						<a href="cart.html" class="btn btn-main">Add To Cart</a>
+						<button id="deletefavourite{{$item->id}}" onClick="return" name="addfavourite" class="btn btn-lg"><i class="tf-ion-ios-heart"></i></button>
+	
+					
+					<script>
+					function addToFavourites(itemid, userid) {
+						var user_id = userid;
+						var item_id = itemid;
+					
+						$.ajax({
+							type: 'post',
+							url: 'api/addfavourite',
+							data: {
+								'user_id': user_id,
+								'item_id': item_id,
+							},
+							success: function () {
+								$('#addfavourites' + item_id).css({
+									'color': '#ad1707'
+								});
+							},
+							error: function (XMLHttpRequest) {
+								// handle error
+							}
+						});
+					}
+					</script>
+	
 				</div>
 			</div>
 		</div>
