@@ -4,6 +4,10 @@ DSI202 Project. MAGO footwear shop online website.
 How to run
 
 ```
+cd mago
+```
+
+```
 npm install --global gulp-cli
 ```
 
